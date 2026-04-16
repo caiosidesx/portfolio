@@ -1,0 +1,261 @@
+:root {
+    --html-color: #df2a0a;
+    --css-color: #065cb9;
+    --js-color: #FFD41D;
+    --bg-color: #270f74;
+    --font-nav: #be2992;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-nav);
+    background-color: var(--bg-color);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    p:hover {
+        color: #e759bc;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 15px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--font-nav);
+        transition: 0.4s;
+    }
+
+    a:hover {
+        color: #e759bc;
+    }
+}
+
+#home {
+    display: flex;
+    align-items: center;
+
+
+    .photo {
+        border: 2px solid var(--font-nav);
+        width: 20vw;
+        border-radius: 50%;
+        margin: 5vw;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .convite {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}  
+
+ @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+#sobre {
+    margin: 20vw;
+
+    .history {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+#projetos {
+    margin: 20vw;
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+
+    .cards-projects {
+        display: flex;
+        gap: 5vw;
+    }
+
+    .cartao {
+        border: 1px solid var(--font-nav);
+        padding: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .cartao:hover {
+        transform: translateY(-10px);
+    }
+
+    img {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+        border-bottom: #be2992 1px solid;
+    }
+
+    h4 {
+        margin-top: 3vw;
+        text-align: center;
+    }
+}
+
+#experiencia {
+    margin: 20vw;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 4vw;
+        font-size: 2rem;
+    }
+
+    .box-tech {
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    article {
+        border: 1px solid var(--font-nav);
+        padding: 2vw;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .tech-1:hover {
+        background-color: var(--html-color);
+        color: black;
+        border: 1px solid var(--html-color);
+    }
+
+    .tech-2:hover {
+        background-color: var(--css-color);
+        color: black;
+        border: 1px solid var(--css-color);
+    }
+
+    .tech-3:hover {
+            background-color: var(--js-color);
+            color: black;
+            border: 1px solid var(--js-color);
+    }
+
+    img {
+        margin: 4vw;
+    }
+
+    h4 {
+        text-align: center;
+    }
+}
+
+#contato {
+    margin: 20vw;
+
+    .contact {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 4vw;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--font-nav);
+        padding: 3vw;
+        border-radius: 20px;
+    }
+
+    .grupo-form {
+        margin-bottom: 2vw;
+    }
+
+    .campo-form {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--font-nav);
+        border: 2px solid rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        outline: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .campo-form:focus {
+        border-color: var(--font-nav);
+        box-shadow: 0 0 10px var(--font-nav);
+        transition: 0.5s;
+    }
+
+    button {
+        padding: 1vw;
+        background-color: #48A111;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    button:hover {
+        box-shadow: #48A111 0 0 10px;
+    }
+}
+
+.menu-botao {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--font-nav);
+    transition: 0.4s;
+    border-radius: 3px;
+}

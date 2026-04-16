@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <p>Caio</p>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-botao">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main id="home">
+        <img src="./img/foto.jpeg" alt="foto de perfil" class="photo">
+
+        <div class="convite">
+            <h1>Olá! Eu sou o Caio Henrique!</h1>
+
+            <p>
+                Seja bem vindo ao meu portfólio! Fique a vontade para visitar a minha página e conhecer mais sobre minha
+                transição de carreira para a programação.
+            </p>
+        </div>
+    </main>
+
+    <section id="sobre">
+        <article class="history">
+            <h2>Breve Relato</h2>
+
+            <p>
+                Tive meu primeiro contato com essa área aproximadamente no ano de 2021 fazia aulas com meu primo e ele
+                me ensinou o básico na programação.
+
+                É uma experiência gratificante colocar a mão na massa e aprender pouco a pouco... é um processo longo de
+                aprendizagem mas o resultado vale a pena! passei por situações horríveis de desânimo que quase me
+                fizeram desistir da área, mas fiquei em um bom caminho e hoje estou aqui, aprendendo e crescendo
+                diariamente.
+            </p>
+        </article>
+    </section>
+
+    <section id="projetos">
+        <h3>Meus Projetos</h3>
+
+        <div class="cards-projects">
+            <article class="cartao">
+                <img src="./img/gobro.png" alt="gobro loja">
+                <h4>GoBro Loja</h4>
+            </article>
+
+            <article class="cartao">
+                <img src="./img/devtech.png" alt="login devtech">
+                <h4>Devtech</h4>
+            </article>
+
+            <article class="cartao">
+                <img src="./img/cofee.png" alt="coffee page">
+                <h4>Coffe</h4>
+            </article>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h2>Tecnologias</h2>
+
+        <div class="box-tech">
+            <article class="tech-1">
+                <img src="./img/html.png" alt="html-icone">
+                <h4>HTML</h4>
+            </article>
+
+            <article class="tech-2">
+                <img src="./img/css.png" alt="css-icone">
+                <h4>CSS</h4>
+            </article>
+
+            <article class="tech-3">
+                <img src="./img/javascript.png" alt="javascript-icone">
+                <h4>JAVASCRIPT</43>
+            </article>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2 class="contact">Entre em contato comigo!</h2>
+
+        <form action="">
+            <div class="grupo-form">
+                <input type="text" placeholder="Digite seu nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea name="" class="campo-form" id="text-box" placeholder="Digite sua mensagem"></textarea>
+            </div>
+
+            <button>Enviar Whatsapp</button>
+        </form>
+    </section>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
