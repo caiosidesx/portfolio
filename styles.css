@@ -57,20 +57,35 @@ header {
 #home {
     display: flex;
     align-items: center;
+    gap: 3rem;
+    margin: clamp(40px, 8vw, 125px);
 
 
     .photo {
         border: 2px solid var(--font-nav);
-        width: 20vw;
+        width: clamp(120px, 20vw, 140px);
+        margin-left: 50px;
         border-radius: 50%;
-        margin: 5vw;
         animation: float 6s ease-in-out infinite;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 
     .convite {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        align-items: center;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.5rem;
+        margin-right: 50px;
     }
 }  
 
@@ -89,16 +104,23 @@ header {
     }
 
 #sobre {
-    margin: 20vw;
+    margin: clamp(40px, 8vw, 120px);
 
     .history {
         display: flex;
         flex-direction: column;
-        gap: 4vw;
+        align-items: center;
     }
 
     h2 {
         font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.5rem;
+        margin-right: 50px;
     }
 }
 
