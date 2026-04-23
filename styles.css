@@ -290,3 +290,33 @@ header {
     transition: 0.4s;
     border-radius: 3px;
 }
+
+@media (max-width: 768px) {
+    .menu-botao {
+        display: flex;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    #home .photo {
+        margin: 0;
+    }
+
+    #home h1 {
+        font-size: 1.3rem;
+        color:#e759bc;
+    }
+
+    #home p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+}
