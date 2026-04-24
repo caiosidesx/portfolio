@@ -324,4 +324,44 @@ header {
         display: flex;
         flex-direction: column;
     }
+
+    #sobre h2 {
+        color:#e759bc;
+    }
+
+    #sobre p {
+        margin: 0;
+    }
+
+    #projetos h3 {
+        color: #e759bc;
+    }
+
+    #projetos .cards-projects {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #experiencia h2 {
+        color: #e759bc;
+    }
+
+    #experiencia .box-tech {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiencia .box-tech .tech-1 {
+        padding: 50px;
+    }
+
+    #experiencia .box-tech .tech-2 {
+        padding: 50px;
+    }
+
+    #experiencia .box-tech .tech-3 {
+        padding: 40px;
+    }
 }
