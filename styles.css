@@ -319,4 +319,9 @@ header {
         align-items: center;
         margin: 0;
     }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+    }
 }
