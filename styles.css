@@ -296,8 +296,12 @@ header {
         display: flex;
     }
 
-    header nav {
+    header .navbar {
         display: none;
+    }
+
+    header .navbar.active {
+        display: flex;
     }
 
     #home {
