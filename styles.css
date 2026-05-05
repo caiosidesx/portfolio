@@ -292,15 +292,28 @@ header {
 }
 
 @media (max-width: 768px) {
-    .menu-botao {
-        display: flex;
-    }
 
     header .navbar {
         display: none;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        background-color: rgb(193, 143, 235);
+        z-index: 99;
+        border-radius: 5px;
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        
     }
 
     header .navbar.active {
+        display: flex;
+    }
+
+    .menu-botao {
         display: flex;
     }
 
