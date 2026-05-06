@@ -299,14 +299,13 @@ header {
         top: 10%;
         left: 0;
         right: 0;
-        background-color: rgb(193, 143, 235);
+        background-color: rgb(127, 125, 129);
         z-index: 99;
         border-radius: 5px;
     }
 
     header .navbar ul {
         flex-direction: column;
-        
     }
 
     header .navbar.active {
@@ -380,5 +379,9 @@ header {
 
     #experiencia .box-tech .tech-3 {
         padding: 40px;
+    }
+
+    #contato .contact {
+        color: #e759bc
     }
 }
