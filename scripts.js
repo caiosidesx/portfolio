@@ -14,8 +14,8 @@ navbar.querySelectorAll('a').forEach(link => {
 function abrirWhatsapp(event) {
     event.preventDefault();
 
-    const nome = document.getElementById('nome');
-    const mensagem = document.getElementById('mensagem');
+    const nome = document.getElementById('nome').value;
+    const mensagem = document.getElementById('mensagem').value;
     const telefone = '5579998898979';
 
     const texto = `Olá, me chamo ${nome}, ${mensagem}`;
