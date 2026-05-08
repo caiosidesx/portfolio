@@ -385,14 +385,3 @@ header {
         color: #e759bc
     }
 }
-
-@media (max-width: 1220px) {
-    #home {
-        display: flex;
-        flex-direction: column;
-
-        .photo {
-            margin: 0;
-        }
-    }
-}
