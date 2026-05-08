@@ -385,3 +385,19 @@ header {
         color: #e759bc
     }
 }
+
+@media (max-width: 320px) {
+    #home h1 {
+        text-align: center;
+    }
+
+    #experiencia .box-tech .tech-3 {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 414px) {
+    #sobre h2 {
+        text-align: center;
+    }
+}
