@@ -402,3 +402,9 @@ header {
         text-align: center;
     }
 }
+/*POCO X7 PRO*/
+@media (max-width: 407px) {
+    #home h1 {
+        text-align: center;
+    }
+}
