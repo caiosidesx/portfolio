@@ -52,6 +52,20 @@ header {
     a:hover {
         color: #e759bc;
     }
+
+    .navbar {
+        animation: slideDown 0.6s ease-in-out;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #home {
@@ -87,21 +101,21 @@ header {
         line-height: 1.5rem;
         margin-right: 50px;
     }
-}  
+}
 
- @keyframes float {
-        0% {
-            transform: translateY(0px);
-        }
-
-        50% {
-            transform: translateY(-20px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
+@keyframes float {
+    0% {
+        transform: translateY(0px);
     }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 #sobre {
     margin: clamp(40px, 8vw, 120px);
@@ -208,9 +222,9 @@ header {
     }
 
     .tech-3:hover {
-            background-color: var(--js-color);
-            color: black;
-            border: 1px solid var(--js-color);
+        background-color: var(--js-color);
+        color: black;
+        border: 1px solid var(--js-color);
     }
 
     img {
@@ -319,7 +333,7 @@ header {
 
     #home {
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
     }
 
     #home .photo {
@@ -328,7 +342,7 @@ header {
 
     #home h1 {
         font-size: 1.3rem;
-        color:#e759bc;
+        color: #e759bc;
     }
 
     #home p {
@@ -343,7 +357,7 @@ header {
     }
 
     #sobre h2 {
-        color:#e759bc;
+        color: #e759bc;
     }
 
     #sobre p {
@@ -402,6 +416,7 @@ header {
         text-align: center;
     }
 }
+
 /*POCO X7 PRO*/
 @media (max-width: 407px) {
     #home h1 {
