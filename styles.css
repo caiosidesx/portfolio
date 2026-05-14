@@ -60,11 +60,13 @@ header {
 
 @keyframes slideDown {
     0% {
-        transform: translateY(-20%);
+        transform: translateY(-100%);
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -316,6 +318,7 @@ header {
         background-color: rgb(86, 84, 88);
         z-index: 99;
         border-radius: 5px;
+        border: 1px solid var(--font-nav);
     }
 
     header .navbar ul {
