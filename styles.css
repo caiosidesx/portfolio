@@ -324,6 +324,16 @@ header {
     header .navbar ul {
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+
+    header .navbar li {
+        padding: 8px;
+        border-bottom: 1px solid var(--font-nav);
+    }
+
+    header .navbar li:last-child {
+        border: none;
     }
 
     header .navbar.active {
